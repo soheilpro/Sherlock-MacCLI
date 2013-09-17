@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Soheil Rashidi. All rights reserved.
 //
 
-#import "PKToken+String.h"
+#import "PKToken+Value.h"
 
-@implementation PKToken (String)
+@implementation PKToken (Value)
 
 - (NSString*)unquotedStringValue
 {

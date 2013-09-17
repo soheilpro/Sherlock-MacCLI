@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define COLOR_CYAN @"\e[0;36m"
+#define COLOR_GREEN @"\e[0;32m"
+#define COLOR_GREY @"\e[0;37m"
+#define COLOR_RESET @"\e[m"
+#define COLOR_YELLOW @"\e[0;33m"
+
 @interface Console : NSObject
 
 + (void)write:(NSString*)format,...;

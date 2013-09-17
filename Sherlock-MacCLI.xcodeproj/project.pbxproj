@@ -17,9 +17,27 @@
 		5B9B37F817E84A68007249D9 /* TripleDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37EE17E84A68007249D9 /* TripleDES.m */; };
 		5B9B37F917E84A68007249D9 /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37F017E84A68007249D9 /* Console.m */; };
 		5B9B37FA17E84A68007249D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37F117E84A68007249D9 /* main.m */; };
-		5B9B37FB17E84A68007249D9 /* Sherlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37F317E84A68007249D9 /* Sherlock.m */; };
+		5B9B37FB17E84A68007249D9 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37F317E84A68007249D9 /* Controller.m */; };
 		5B9B37FD17E84BC6007249D9 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9B37FC17E84BC6007249D9 /* ParseKit.framework */; };
-		5B9B380017E84C0E007249D9 /* PKToken+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37FF17E84C0E007249D9 /* PKToken+String.m */; };
+		5B9B380017E84C0E007249D9 /* PKToken+Value.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37FF17E84C0E007249D9 /* PKToken+Value.m */; };
+		5BB957CA17E86E48006CCA90 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957C917E86E48006CCA90 /* Command.m */; };
+		5BB957CD17E86EB6006CCA90 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957CC17E86EB6006CCA90 /* Context.m */; };
+		5BB957D017E86FDD006CCA90 /* Folder+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957CF17E86FDD006CCA90 /* Folder+Utilities.m */; };
+		5BB957D417E8724F006CCA90 /* ListCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957D317E8724F006CCA90 /* ListCommand.m */; };
+		5BB957D717E8744C006CCA90 /* ExitCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957D617E8744C006CCA90 /* ExitCommand.m */; };
+		5BB957DA17E8763E006CCA90 /* ChangeFolderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957D917E8763E006CCA90 /* ChangeFolderCommand.m */; };
+		5BB957DD17E87787006CCA90 /* ShowItemCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957DC17E87787006CCA90 /* ShowItemCommand.m */; };
+		5BB957E017E87881006CCA90 /* CopyItemValueToPasteboardCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957DF17E87881006CCA90 /* CopyItemValueToPasteboardCommand.m */; };
+		5BB957E317E878F0006CCA90 /* AddFolderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957E217E878F0006CCA90 /* AddFolderCommand.m */; };
+		5BB957E617E8794B006CCA90 /* AddItemCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957E517E8794B006CCA90 /* AddItemCommand.m */; };
+		5BB957E917E879A2006CCA90 /* UpdateItemCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957E817E879A2006CCA90 /* UpdateItemCommand.m */; };
+		5BB957EC17E87A2F006CCA90 /* RenameFolderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957EB17E87A2F006CCA90 /* RenameFolderCommand.m */; };
+		5BB957EF17E87A3C006CCA90 /* RenameItemCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957EE17E87A3C006CCA90 /* RenameItemCommand.m */; };
+		5BB957F217E87A4C006CCA90 /* DeleteFolderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957F117E87A4C006CCA90 /* DeleteFolderCommand.m */; };
+		5BB957F517E87A54006CCA90 /* DeleteItemCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957F417E87A54006CCA90 /* DeleteItemCommand.m */; };
+		5BB957F817E87A5B006CCA90 /* SaveDatabaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957F717E87A5B006CCA90 /* SaveDatabaseCommand.m */; };
+		5BB957FB17E87D45006CCA90 /* HelpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957FA17E87D45006CCA90 /* HelpCommand.m */; };
+		5BB957FE17E88475006CCA90 /* ChangeDatabasePasswordCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957FD17E88475006CCA90 /* ChangeDatabasePasswordCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,11 +60,47 @@
 		5B9B37EF17E84A68007249D9 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
 		5B9B37F017E84A68007249D9 /* Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Console.m; sourceTree = "<group>"; };
 		5B9B37F117E84A68007249D9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5B9B37F217E84A68007249D9 /* Sherlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sherlock.h; sourceTree = "<group>"; };
-		5B9B37F317E84A68007249D9 /* Sherlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sherlock.m; sourceTree = "<group>"; };
+		5B9B37F217E84A68007249D9 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		5B9B37F317E84A68007249D9 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		5B9B37FC17E84BC6007249D9 /* ParseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Sherlock-albrvdtwrxebuoehkvvuctdplsqc/Build/Products/Debug/ParseKit.framework"; sourceTree = "<group>"; };
-		5B9B37FE17E84C0E007249D9 /* PKToken+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKToken+String.h"; sourceTree = "<group>"; };
-		5B9B37FF17E84C0E007249D9 /* PKToken+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKToken+String.m"; sourceTree = "<group>"; };
+		5B9B37FE17E84C0E007249D9 /* PKToken+Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKToken+Value.h"; sourceTree = "<group>"; };
+		5B9B37FF17E84C0E007249D9 /* PKToken+Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKToken+Value.m"; sourceTree = "<group>"; };
+		5BB957C817E86E48006CCA90 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		5BB957C917E86E48006CCA90 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		5BB957CB17E86EB6006CCA90 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		5BB957CC17E86EB6006CCA90 /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		5BB957CE17E86FDD006CCA90 /* Folder+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Folder+Utilities.h"; sourceTree = "<group>"; };
+		5BB957CF17E86FDD006CCA90 /* Folder+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Folder+Utilities.m"; sourceTree = "<group>"; };
+		5BB957D217E8724F006CCA90 /* ListCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCommand.h; sourceTree = "<group>"; };
+		5BB957D317E8724F006CCA90 /* ListCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCommand.m; sourceTree = "<group>"; };
+		5BB957D517E8744C006CCA90 /* ExitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExitCommand.h; sourceTree = "<group>"; };
+		5BB957D617E8744C006CCA90 /* ExitCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExitCommand.m; sourceTree = "<group>"; };
+		5BB957D817E8763E006CCA90 /* ChangeFolderCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeFolderCommand.h; sourceTree = "<group>"; };
+		5BB957D917E8763E006CCA90 /* ChangeFolderCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeFolderCommand.m; sourceTree = "<group>"; };
+		5BB957DB17E87787006CCA90 /* ShowItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowItemCommand.h; sourceTree = "<group>"; };
+		5BB957DC17E87787006CCA90 /* ShowItemCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowItemCommand.m; sourceTree = "<group>"; };
+		5BB957DE17E87881006CCA90 /* CopyItemValueToPasteboardCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyItemValueToPasteboardCommand.h; sourceTree = "<group>"; };
+		5BB957DF17E87881006CCA90 /* CopyItemValueToPasteboardCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyItemValueToPasteboardCommand.m; sourceTree = "<group>"; };
+		5BB957E117E878F0006CCA90 /* AddFolderCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFolderCommand.h; sourceTree = "<group>"; };
+		5BB957E217E878F0006CCA90 /* AddFolderCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFolderCommand.m; sourceTree = "<group>"; };
+		5BB957E417E8794B006CCA90 /* AddItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemCommand.h; sourceTree = "<group>"; };
+		5BB957E517E8794B006CCA90 /* AddItemCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemCommand.m; sourceTree = "<group>"; };
+		5BB957E717E879A2006CCA90 /* UpdateItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateItemCommand.h; sourceTree = "<group>"; };
+		5BB957E817E879A2006CCA90 /* UpdateItemCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateItemCommand.m; sourceTree = "<group>"; };
+		5BB957EA17E87A2F006CCA90 /* RenameFolderCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenameFolderCommand.h; sourceTree = "<group>"; };
+		5BB957EB17E87A2F006CCA90 /* RenameFolderCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenameFolderCommand.m; sourceTree = "<group>"; };
+		5BB957ED17E87A3C006CCA90 /* RenameItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenameItemCommand.h; sourceTree = "<group>"; };
+		5BB957EE17E87A3C006CCA90 /* RenameItemCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenameItemCommand.m; sourceTree = "<group>"; };
+		5BB957F017E87A4C006CCA90 /* DeleteFolderCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteFolderCommand.h; sourceTree = "<group>"; };
+		5BB957F117E87A4C006CCA90 /* DeleteFolderCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteFolderCommand.m; sourceTree = "<group>"; };
+		5BB957F317E87A54006CCA90 /* DeleteItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteItemCommand.h; sourceTree = "<group>"; };
+		5BB957F417E87A54006CCA90 /* DeleteItemCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteItemCommand.m; sourceTree = "<group>"; };
+		5BB957F617E87A5B006CCA90 /* SaveDatabaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveDatabaseCommand.h; sourceTree = "<group>"; };
+		5BB957F717E87A5B006CCA90 /* SaveDatabaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveDatabaseCommand.m; sourceTree = "<group>"; };
+		5BB957F917E87D45006CCA90 /* HelpCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpCommand.h; sourceTree = "<group>"; };
+		5BB957FA17E87D45006CCA90 /* HelpCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCommand.m; sourceTree = "<group>"; };
+		5BB957FC17E88475006CCA90 /* ChangeDatabasePasswordCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDatabasePasswordCommand.h; sourceTree = "<group>"; };
+		5BB957FD17E88475006CCA90 /* ChangeDatabasePasswordCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDatabasePasswordCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +150,14 @@
 			isa = PBXGroup;
 			children = (
 				5B9B37E417E84A68007249D9 /* Database */,
+				5BB957D117E8723C006CCA90 /* Commands */,
 				5B9B380117E84D23007249D9 /* Utilities */,
-				5B9B37F217E84A68007249D9 /* Sherlock.h */,
-				5B9B37F317E84A68007249D9 /* Sherlock.m */,
+				5BB957C817E86E48006CCA90 /* Command.h */,
+				5BB957C917E86E48006CCA90 /* Command.m */,
+				5BB957CB17E86EB6006CCA90 /* Context.h */,
+				5BB957CC17E86EB6006CCA90 /* Context.m */,
+				5B9B37F217E84A68007249D9 /* Controller.h */,
+				5B9B37F317E84A68007249D9 /* Controller.m */,
 				5B9B37F117E84A68007249D9 /* main.m */,
 			);
 			name = Sherlock;
@@ -154,10 +213,49 @@
 			children = (
 				5B9B37EF17E84A68007249D9 /* Console.h */,
 				5B9B37F017E84A68007249D9 /* Console.m */,
-				5B9B37FE17E84C0E007249D9 /* PKToken+String.h */,
-				5B9B37FF17E84C0E007249D9 /* PKToken+String.m */,
+				5BB957CE17E86FDD006CCA90 /* Folder+Utilities.h */,
+				5BB957CF17E86FDD006CCA90 /* Folder+Utilities.m */,
+				5B9B37FE17E84C0E007249D9 /* PKToken+Value.h */,
+				5B9B37FF17E84C0E007249D9 /* PKToken+Value.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		5BB957D117E8723C006CCA90 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				5BB957E117E878F0006CCA90 /* AddFolderCommand.h */,
+				5BB957E217E878F0006CCA90 /* AddFolderCommand.m */,
+				5BB957E417E8794B006CCA90 /* AddItemCommand.h */,
+				5BB957E517E8794B006CCA90 /* AddItemCommand.m */,
+				5BB957FC17E88475006CCA90 /* ChangeDatabasePasswordCommand.h */,
+				5BB957FD17E88475006CCA90 /* ChangeDatabasePasswordCommand.m */,
+				5BB957D817E8763E006CCA90 /* ChangeFolderCommand.h */,
+				5BB957D917E8763E006CCA90 /* ChangeFolderCommand.m */,
+				5BB957DE17E87881006CCA90 /* CopyItemValueToPasteboardCommand.h */,
+				5BB957DF17E87881006CCA90 /* CopyItemValueToPasteboardCommand.m */,
+				5BB957F017E87A4C006CCA90 /* DeleteFolderCommand.h */,
+				5BB957F117E87A4C006CCA90 /* DeleteFolderCommand.m */,
+				5BB957F317E87A54006CCA90 /* DeleteItemCommand.h */,
+				5BB957F417E87A54006CCA90 /* DeleteItemCommand.m */,
+				5BB957D517E8744C006CCA90 /* ExitCommand.h */,
+				5BB957D617E8744C006CCA90 /* ExitCommand.m */,
+				5BB957F917E87D45006CCA90 /* HelpCommand.h */,
+				5BB957FA17E87D45006CCA90 /* HelpCommand.m */,
+				5BB957D217E8724F006CCA90 /* ListCommand.h */,
+				5BB957D317E8724F006CCA90 /* ListCommand.m */,
+				5BB957EA17E87A2F006CCA90 /* RenameFolderCommand.h */,
+				5BB957EB17E87A2F006CCA90 /* RenameFolderCommand.m */,
+				5BB957ED17E87A3C006CCA90 /* RenameItemCommand.h */,
+				5BB957EE17E87A3C006CCA90 /* RenameItemCommand.m */,
+				5BB957F617E87A5B006CCA90 /* SaveDatabaseCommand.h */,
+				5BB957F717E87A5B006CCA90 /* SaveDatabaseCommand.m */,
+				5BB957DB17E87787006CCA90 /* ShowItemCommand.h */,
+				5BB957DC17E87787006CCA90 /* ShowItemCommand.m */,
+				5BB957E717E879A2006CCA90 /* UpdateItemCommand.h */,
+				5BB957E817E879A2006CCA90 /* UpdateItemCommand.m */,
+			);
+			name = Commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +283,7 @@
 		5B8975BE17E65C0200F2FEBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Soheil Rashidi";
 			};
 			buildConfigurationList = 5B8975C117E65C0200F2FEBE /* Build configuration list for PBXProject "Sherlock-MacCLI" */;
@@ -211,15 +309,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9B37F817E84A68007249D9 /* TripleDES.m in Sources */,
-				5B9B380017E84C0E007249D9 /* PKToken+String.m in Sources */,
+				5BB957DA17E8763E006CCA90 /* ChangeFolderCommand.m in Sources */,
+				5BB957D417E8724F006CCA90 /* ListCommand.m in Sources */,
+				5BB957CD17E86EB6006CCA90 /* Context.m in Sources */,
+				5B9B380017E84C0E007249D9 /* PKToken+Value.m in Sources */,
+				5BB957E317E878F0006CCA90 /* AddFolderCommand.m in Sources */,
+				5BB957FB17E87D45006CCA90 /* HelpCommand.m in Sources */,
+				5BB957E617E8794B006CCA90 /* AddItemCommand.m in Sources */,
+				5BB957E017E87881006CCA90 /* CopyItemValueToPasteboardCommand.m in Sources */,
 				5B9B37F717E84A68007249D9 /* Node.m in Sources */,
+				5BB957D017E86FDD006CCA90 /* Folder+Utilities.m in Sources */,
+				5BB957F517E87A54006CCA90 /* DeleteItemCommand.m in Sources */,
+				5BB957DD17E87787006CCA90 /* ShowItemCommand.m in Sources */,
 				5B9B37F617E84A68007249D9 /* Item.m in Sources */,
+				5BB957D717E8744C006CCA90 /* ExitCommand.m in Sources */,
 				5B9B37F417E84A68007249D9 /* Database.m in Sources */,
+				5BB957F217E87A4C006CCA90 /* DeleteFolderCommand.m in Sources */,
 				5B9B37F517E84A68007249D9 /* Folder.m in Sources */,
-				5B9B37FB17E84A68007249D9 /* Sherlock.m in Sources */,
+				5BB957E917E879A2006CCA90 /* UpdateItemCommand.m in Sources */,
+				5BB957FE17E88475006CCA90 /* ChangeDatabasePasswordCommand.m in Sources */,
+				5B9B37FB17E84A68007249D9 /* Controller.m in Sources */,
 				5B9B37F917E84A68007249D9 /* Console.m in Sources */,
+				5BB957F817E87A5B006CCA90 /* SaveDatabaseCommand.m in Sources */,
+				5BB957CA17E86E48006CCA90 /* Command.m in Sources */,
+				5BB957EC17E87A2F006CCA90 /* RenameFolderCommand.m in Sources */,
 				5B9B37FA17E84A68007249D9 /* main.m in Sources */,
 				5B9B37D417E848E5007249D9 /* GDataXMLNode.m in Sources */,
+				5BB957EF17E87A3C006CCA90 /* RenameItemCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +346,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -263,7 +378,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;

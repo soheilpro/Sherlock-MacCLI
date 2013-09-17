@@ -80,7 +80,12 @@
     GDataXMLElement* rootElement = [self rootElementFromFolder:self.root];
     GDataXMLDocument* document = [[GDataXMLDocument alloc] initWithRootElement:rootElement];
     
-    return [document XMLData];
+    NSData* data = [document XMLData];
+
+    if (self.password != nil)
+        data = [TripleDES transformData:data operation:kCCEncrypt withPassword:self.password];
+
+    return data;
 }
 
 - (GDataXMLElement*)rootElementFromFolder:(Folder*)folder

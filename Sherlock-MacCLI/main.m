@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Soheil Rashidi. All rights reserved.
 //
 
-#import "Sherlock.h"
+#import "Controller.h"
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char* argv[])
@@ -18,7 +18,7 @@ int main(int argc, const char* argv[])
         for (int i = 0; i < argc; i++)
             [arguments addObject:[NSString stringWithUTF8String:argv[i]]];
 
-        Sherlock* sherlock = [[Sherlock alloc] init];
+        Controller* sherlock = [[Controller alloc] init];
         [sherlock runWithArguments:arguments];
     }
 

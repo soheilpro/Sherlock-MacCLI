@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Sherlock : NSObject
+@interface Controller : NSObject
+
+@property (nonatomic, strong, readonly) NSArray* commandClasses;
+@property (nonatomic) BOOL shouldExit;
 
 - (int)runWithArguments:(NSArray*)arguments;
+- (void)reportError:(NSString*)error;
 
 @end

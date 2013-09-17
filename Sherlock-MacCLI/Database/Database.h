@@ -23,6 +23,7 @@
 @property (nonatomic, strong) Folder* root;
 
 - (BOOL)openWithData:(NSData*)data andPassword:(NSString*)password;
+- (NSData*)data;
 
 + (NSArray*)sortDatabases:(NSArray*)databases;
 
