@@ -7,6 +7,7 @@
 //
 
 #import "Console.h"
+#import "Database.h"
 #import "Folder+Utilities.h"
 #import "PKToken+Value.h"
 
@@ -33,6 +34,16 @@
 
 - (Folder*)folderForToken:(PKToken*)token
 {
+    if (token.isSymbol && [token.stringValue isEqualToString:@"/"])
+    {
+        return self.database.root;
+    }
+
+    if (token.isSymbol && [token.stringValue isEqualToString:@"."])
+    {
+        return self;
+    }
+
     if (token.isSymbol && [token.stringValue isEqualToString:@".."])
     {
         if (self.parent == nil)
