@@ -24,6 +24,12 @@
         return;
     }
 
+    if (folder == self.context.database.root)
+    {
+        [self.controller reportError:@"Cannot rename root folder."];
+        return;
+    }
+
     PKToken* nameToken = [self.tokenizer nextToken];
 
     if (nameToken == [PKToken EOFToken])

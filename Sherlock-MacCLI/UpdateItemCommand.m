@@ -42,7 +42,6 @@
     return @"update";
 }
 
-
 + (NSString*)syntax
 {
     return @"item";

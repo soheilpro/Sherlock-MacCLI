@@ -23,8 +23,15 @@
         return;
     }
 
+    if (folder == self.context.database.root)
+    {
+        [self.controller reportError:@"Cannot delete root folder."];
+        return;
+    }
+
     [folder.parent.folders removeObject:folder];
 
+    self.context.folder = folder.parent;
     self.context.isDirty = YES;
 }
 
