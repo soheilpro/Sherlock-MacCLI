@@ -16,8 +16,11 @@
 
 @interface Console : NSObject
 
+typedef NSArray* (^completorBlock)(NSString* buffer, NSString* prefix);
+
 + (void)write:(NSString*)format,...;
-+ (NSString*)read;
++ (NSString*)read:(NSString*)prompt;
++ (NSString*)read:(NSString*)prompt completor:(completorBlock)completor;
 + (NSString*)readPassword;
 
 @end

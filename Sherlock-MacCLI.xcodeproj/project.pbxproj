@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B20287119655BE00027C380 /* libreadline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B20287019655BE00027C380 /* libreadline.dylib */; };
 		5B3C572117E7AF410018430E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3C572017E7AF410018430E /* AppKit.framework */; };
 		5B8975CA17E65C0200F2FEBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8975C917E65C0200F2FEBE /* Foundation.framework */; };
 		5B9B37D417E848E5007249D9 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37D317E848E5007249D9 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B20287019655BE00027C380 /* libreadline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libreadline.dylib; path = usr/lib/libreadline.dylib; sourceTree = SDKROOT; };
 		5B3C572017E7AF410018430E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5B8975C617E65C0200F2FEBE /* sherlock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sherlock; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8975C917E65C0200F2FEBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B20287119655BE00027C380 /* libreadline.dylib in Frameworks */,
 				5B9B37FD17E84BC6007249D9 /* ParseKit.framework in Frameworks */,
 				5B3C572117E7AF410018430E /* AppKit.framework in Frameworks */,
 				5B8975CA17E65C0200F2FEBE /* Foundation.framework in Frameworks */,
@@ -139,6 +142,7 @@
 		5B8975C817E65C0200F2FEBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B20287019655BE00027C380 /* libreadline.dylib */,
 				5B9B37FC17E84BC6007249D9 /* ParseKit.framework */,
 				5B3C572017E7AF410018430E /* AppKit.framework */,
 				5B8975C917E65C0200F2FEBE /* Foundation.framework */,
@@ -409,6 +413,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sherlock-MacCLI/Sherlock-MacCLI-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = sherlock;
 			};
@@ -424,6 +432,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sherlock-MacCLI/Sherlock-MacCLI-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = sherlock;
 			};

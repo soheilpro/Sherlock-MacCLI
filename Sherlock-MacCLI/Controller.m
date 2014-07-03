@@ -110,10 +110,33 @@
 {
     while (YES)
     {
-        [Console write:@"\n%@> ", [self.context.folder path]];
+        NSString* prompt = [NSString stringWithFormat:@"\n%@> ", [self.context.folder path]];
+        NSString* input = [Console read:prompt completor:^NSArray* (NSString* buffer, NSString* prefix)
+        {
+            // Is it the first word?
+            if ([[buffer stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] rangeOfString:@" "].length == 0)
+            {
+                NSMutableArray* matches = [NSMutableArray array];
 
-        NSString* input = [Console read];
-        
+                for (Class commandClass in self.commandClasses)
+                    [matches addObject:[commandClass name]];
+
+                return matches;
+            }
+            else
+            {
+                NSMutableArray* matches = [NSMutableArray array];
+
+                for (Folder* folder in self.context.folder.folders)
+                    [matches addObject:folder.name];
+
+                for (Item* item in self.context.folder.items)
+                    [matches addObject:item.name];
+
+                return matches;
+            }
+        }];
+
         PKTokenizer* tokenizer = [PKTokenizer tokenizerWithString:input];
 
         for (Class commandClass in self.commandClasses)

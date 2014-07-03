@@ -17,9 +17,10 @@
     {
         while (YES)
         {
-            [Console write:@"You have unsaved chanages. Discard them (yes/no)? "];
-
-            NSString* answer = [Console read];
+            NSString* answer = [Console read:@"You have unsaved chanages. Discard them (yes/no)? " completor:^NSArray *(NSString* buffer, NSString* prefix)
+            {
+                return @[@"yes", @"no"];
+            }];
 
             if ([answer isEqualToString:@"yes"] || [answer isEqualToString:@"y"])
                 break;
