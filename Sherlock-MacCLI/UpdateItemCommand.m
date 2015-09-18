@@ -24,15 +24,22 @@
         return;
     }
 
-    PKToken* valueToken = [self.tokenizer nextToken];
+    PKToken* nextToken = [self.tokenizer nextToken];
 
-    if (valueToken == [PKToken EOFToken])
+    if (nextToken == [PKToken EOFToken])
     {
         [self.controller reportError:@"Invalid parameter (value)"];
         return;
     }
 
-    item.value = valueToken.unquotedStringValue;
+    if ([nextToken.stringValue isEqualToString:@"--secret"])
+        item.isSecret = YES;
+
+    else if ([nextToken.stringValue isEqualToString:@"--no-secret"])
+        item.isSecret = NO;
+
+    else
+        item.value = nextToken.unquotedStringValue;
 
     self.context.isDirty = YES;
 }
@@ -44,19 +51,27 @@
 
 + (NSString*)syntax
 {
-    return @"item";
+    return @"item (value | --secret | --no-secret)";
 }
 
 + (NSArray*)arguments
 {
     return @[
         @"item: Item's name or index.",
+        @"--secret: Secret item.",
+        @"--no-secret: Normal item.",
     ];
 }
 
 + (NSString*)description
 {
     return @"Update item.";
+}
+
++ (void)initTokenizer:(PKTokenizer*)tokenizer
+{
+    [tokenizer.symbolState add:@"--secret"];
+    [tokenizer.symbolState add:@"--no-secret"];
 }
 
 @end
