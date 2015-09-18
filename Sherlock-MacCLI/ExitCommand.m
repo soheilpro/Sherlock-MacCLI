@@ -17,16 +17,23 @@
     {
         while (YES)
         {
-            NSString* answer = [Console read:@"You have unsaved chanages. Discard them (yes/no)? " completor:^NSArray *(NSString* buffer, NSString* prefix)
+            NSString* answer = [Console read:@"You have unsaved chanages. What to do? (save/discard/cancel)? " completor:^NSArray *(NSString* buffer, NSString* prefix)
             {
-                return @[@"yes", @"no"];
+                return @[@"save", @"discard", @"cancel"];
             }];
 
-            if ([answer isEqualToString:@"yes"] || [answer isEqualToString:@"y"])
+            if ([answer isEqualToString:@"save"] || [answer isEqualToString:@"s"]) {
+                [[self.context.database data] writeToFile:self.context.databasePath atomically:YES];
                 break;
-
-            if ([answer isEqualToString:@"no"] || [answer isEqualToString:@"n"])
+            }
+            else if ([answer isEqualToString:@"discard"] || [answer isEqualToString:@"d"])
+            {
+                break;
+            }
+            else if ([answer isEqualToString:@"cancel"] || [answer isEqualToString:@"c"])
+            {
                 return;
+            }
         }
     }
 
