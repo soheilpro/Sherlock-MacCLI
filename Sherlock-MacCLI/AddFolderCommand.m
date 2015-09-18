@@ -32,9 +32,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"addfolder";
+    return @[@"mkdir"];
 }
 
 + (NSString*)syntax

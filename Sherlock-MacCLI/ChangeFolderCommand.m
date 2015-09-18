@@ -26,14 +26,14 @@
     self.context.folder = folder;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"cd";
+    return @[@"cd"];
 }
 
 + (NSString*)syntax
 {
-    return @"(folder | ..)";
+    return @"(folder | .. | /)";
 }
 
 + (NSArray*)arguments
@@ -41,6 +41,7 @@
     return @[
         @"folder: Folder's name or index.",
         @"..: Parent folder.",
+        @"/: Root folder.",
     ];
 }
 

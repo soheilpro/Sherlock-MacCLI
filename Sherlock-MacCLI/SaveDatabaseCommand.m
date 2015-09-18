@@ -19,9 +19,9 @@
     self.context.isDirty = NO;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"save";
+    return @[@"save"];
 }
 
 + (NSString*)description

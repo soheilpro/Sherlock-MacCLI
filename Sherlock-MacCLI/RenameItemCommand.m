@@ -37,9 +37,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"mvitem";
+    return @[@"mv"];
 }
 
 

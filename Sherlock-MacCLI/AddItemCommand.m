@@ -45,9 +45,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString *)name
++ (NSArray*)names
 {
-    return @"additem";
+    return @[@"add"];
 }
 
 + (NSString*)syntax

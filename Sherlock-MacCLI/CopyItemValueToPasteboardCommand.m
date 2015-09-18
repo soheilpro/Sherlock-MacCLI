@@ -29,9 +29,9 @@
     [pasteboard writeObjects:@[item.value]];
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"pb";
+    return @[@"pbcopy", @"pb"];
 }
 
 + (NSString*)description

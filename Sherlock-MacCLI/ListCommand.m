@@ -56,9 +56,9 @@
     }];
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"ls";
+    return @[@"ls", @"l"];
 }
 
 + (NSString*)syntax

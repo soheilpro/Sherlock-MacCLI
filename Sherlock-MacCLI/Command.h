@@ -19,7 +19,7 @@
 
 - (void)execute;
 
-+ (NSString*)name;
++ (NSArray*)names;
 + (NSString*)syntax;
 + (NSArray*)arguments;
 + (NSString*)description;

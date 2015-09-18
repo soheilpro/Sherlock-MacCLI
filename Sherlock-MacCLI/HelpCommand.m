@@ -15,7 +15,7 @@
 {
     for (id commandClass in self.controller.commandClasses)
     {
-        [Console write:@"- " COLOR_CYAN "%@" COLOR_RESET " %@\n", [commandClass name], [commandClass syntax]];
+        [Console write:@"- " COLOR_CYAN "%@" COLOR_RESET " %@\n", [[commandClass names] componentsJoinedByString:@"/"], [commandClass syntax]];
 
         for (NSString* argument in [commandClass arguments])
             [Console write:@"  %@\n", argument];
@@ -24,9 +24,9 @@
     }
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"help";
+    return @[@"help"];
 }
 
 + (NSString*)description

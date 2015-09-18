@@ -43,9 +43,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"mvfolder";
+    return @[@"mvdir"];
 }
 
 + (NSString*)syntax

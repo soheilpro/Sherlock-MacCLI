@@ -35,9 +35,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"rmfolder";
+    return @[@"rmdir"];
 }
 
 + (NSString*)syntax

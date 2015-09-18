@@ -30,9 +30,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"chpwd";
+    return @[@"chpwd"];
 }
 
 + (NSString*)syntax

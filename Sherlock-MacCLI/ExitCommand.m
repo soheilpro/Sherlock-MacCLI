@@ -33,9 +33,9 @@
     self.controller.shouldExit = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"exit";
+    return @[@"exit"];
 }
 
 + (NSString*)description

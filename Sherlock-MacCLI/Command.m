@@ -14,9 +14,9 @@
 {
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return nil;
+    return @[];
 }
 
 + (NSString*)syntax

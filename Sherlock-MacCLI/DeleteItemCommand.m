@@ -28,9 +28,9 @@
     self.context.isDirty = YES;
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"rmitem";
+    return @[@"rm"];
 }
 
 + (NSString*)description

@@ -27,9 +27,9 @@
     [Console write:@"" COLOR_GREEN "%@" COLOR_RESET "\n", item.value];
 }
 
-+ (NSString*)name
++ (NSArray*)names
 {
-    return @"show";
+    return @[@"show"];
 }
 
 + (NSString*)syntax

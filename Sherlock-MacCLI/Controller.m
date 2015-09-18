@@ -119,7 +119,8 @@
                 NSMutableArray* matches = [NSMutableArray array];
 
                 for (Class commandClass in self.commandClasses)
-                    [matches addObject:[commandClass name]];
+                    for (NSString* commandName in [commandClass names])
+                        [matches addObject:commandName];
 
                 return matches;
             }
@@ -165,8 +166,9 @@
 - (Command*)commandByName:(NSString*)name
 {
     for (Class commandClass in self.commandClasses)
-        if ([name isEqualToString:[commandClass name]])
-            return [[commandClass alloc] init];
+        for (NSString* commandName in [commandClass names])
+            if ([name isEqualToString:commandName])
+                return [[commandClass alloc] init];
 
     return nil;
 }
