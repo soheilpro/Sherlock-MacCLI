@@ -23,7 +23,7 @@
         return;
     }
 
-    [item.parent.folders removeObject:item];
+    [item.parent.items removeObject:item];
 
     self.context.isDirty = YES;
 }
