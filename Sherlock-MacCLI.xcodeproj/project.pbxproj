@@ -39,6 +39,7 @@
 		5BB957F817E87A5B006CCA90 /* SaveDatabaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957F717E87A5B006CCA90 /* SaveDatabaseCommand.m */; };
 		5BB957FB17E87D45006CCA90 /* HelpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957FA17E87D45006CCA90 /* HelpCommand.m */; };
 		5BB957FE17E88475006CCA90 /* ChangeDatabasePasswordCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB957FD17E88475006CCA90 /* ChangeDatabasePasswordCommand.m */; };
+		5BF574B81BAC111600619663 /* FindCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF574B71BAC111600619663 /* FindCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		5BB957FA17E87D45006CCA90 /* HelpCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCommand.m; sourceTree = "<group>"; };
 		5BB957FC17E88475006CCA90 /* ChangeDatabasePasswordCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDatabasePasswordCommand.h; sourceTree = "<group>"; };
 		5BB957FD17E88475006CCA90 /* ChangeDatabasePasswordCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDatabasePasswordCommand.m; sourceTree = "<group>"; };
+		5BF574B61BAC111600619663 /* FindCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCommand.h; sourceTree = "<group>"; };
+		5BF574B71BAC111600619663 /* FindCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 				5BB957F417E87A54006CCA90 /* DeleteItemCommand.m */,
 				5BB957D517E8744C006CCA90 /* ExitCommand.h */,
 				5BB957D617E8744C006CCA90 /* ExitCommand.m */,
+				5BF574B61BAC111600619663 /* FindCommand.h */,
+				5BF574B71BAC111600619663 /* FindCommand.m */,
 				5BB957F917E87D45006CCA90 /* HelpCommand.h */,
 				5BB957FA17E87D45006CCA90 /* HelpCommand.m */,
 				5BB957D217E8724F006CCA90 /* ListCommand.h */,
@@ -328,6 +333,7 @@
 				5B9B37F617E84A68007249D9 /* Item.m in Sources */,
 				5BB957D717E8744C006CCA90 /* ExitCommand.m in Sources */,
 				5B9B37F417E84A68007249D9 /* Database.m in Sources */,
+				5BF574B81BAC111600619663 /* FindCommand.m in Sources */,
 				5BB957F217E87A4C006CCA90 /* DeleteFolderCommand.m in Sources */,
 				5B9B37F517E84A68007249D9 /* Folder.m in Sources */,
 				5BB957E917E879A2006CCA90 /* UpdateItemCommand.m in Sources */,

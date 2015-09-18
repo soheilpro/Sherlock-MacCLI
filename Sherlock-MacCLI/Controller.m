@@ -18,6 +18,7 @@
 #import "DeleteFolderCommand.h"
 #import "DeleteItemCommand.h"
 #import "ExitCommand.h"
+#import "FindCommand.h"
 #import "Folder+Utilities.h"
 #import "HelpCommand.h"
 #import "ListCommand.h"
@@ -52,6 +53,7 @@
             [DeleteFolderCommand class],
             [DeleteItemCommand class],
             [ExitCommand class],
+            [FindCommand class],
             [HelpCommand class],
             [ListCommand class],
             [RenameFolderCommand class],
