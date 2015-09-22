@@ -23,6 +23,7 @@
 #import "HelpCommand.h"
 #import "ListCommand.h"
 #import "PKToken+Value.h"
+#import "OpenCommand.h"
 #import "RenameFolderCommand.h"
 #import "RenameItemCommand.h"
 #import "SaveDatabaseCommand.h"
@@ -56,6 +57,7 @@
             [FindCommand class],
             [HelpCommand class],
             [ListCommand class],
+            [OpenCommand class],
             [RenameFolderCommand class],
             [RenameItemCommand class],
             [SaveDatabaseCommand class],

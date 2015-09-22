@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B20287119655BE00027C380 /* libreadline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B20287019655BE00027C380 /* libreadline.dylib */; };
+		5B23DF851BB1D31D003BEF83 /* OpenCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B23DF841BB1D31D003BEF83 /* OpenCommand.m */; settings = {ASSET_TAGS = (); }; };
 		5B3C572117E7AF410018430E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3C572017E7AF410018430E /* AppKit.framework */; };
 		5B8975CA17E65C0200F2FEBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8975C917E65C0200F2FEBE /* Foundation.framework */; };
 		5B9B37D417E848E5007249D9 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B37D317E848E5007249D9 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		5B20287019655BE00027C380 /* libreadline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libreadline.dylib; path = usr/lib/libreadline.dylib; sourceTree = SDKROOT; };
+		5B23DF831BB1D31D003BEF83 /* OpenCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCommand.h; sourceTree = "<group>"; };
+		5B23DF841BB1D31D003BEF83 /* OpenCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenCommand.m; sourceTree = "<group>"; };
 		5B3C572017E7AF410018430E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5B8975C617E65C0200F2FEBE /* sherlock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sherlock; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8975C917E65C0200F2FEBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -253,6 +256,8 @@
 				5BB957FA17E87D45006CCA90 /* HelpCommand.m */,
 				5BB957D217E8724F006CCA90 /* ListCommand.h */,
 				5BB957D317E8724F006CCA90 /* ListCommand.m */,
+				5B23DF831BB1D31D003BEF83 /* OpenCommand.h */,
+				5B23DF841BB1D31D003BEF83 /* OpenCommand.m */,
 				5BB957EA17E87A2F006CCA90 /* RenameFolderCommand.h */,
 				5BB957EB17E87A2F006CCA90 /* RenameFolderCommand.m */,
 				5BB957ED17E87A3C006CCA90 /* RenameItemCommand.h */,
@@ -336,6 +341,7 @@
 				5BF574B81BAC111600619663 /* FindCommand.m in Sources */,
 				5BB957F217E87A4C006CCA90 /* DeleteFolderCommand.m in Sources */,
 				5B9B37F517E84A68007249D9 /* Folder.m in Sources */,
+				5B23DF851BB1D31D003BEF83 /* OpenCommand.m in Sources */,
 				5BB957E917E879A2006CCA90 /* UpdateItemCommand.m in Sources */,
 				5BB957FE17E88475006CCA90 /* ChangeDatabasePasswordCommand.m in Sources */,
 				5B9B37FB17E84A68007249D9 /* Controller.m in Sources */,
