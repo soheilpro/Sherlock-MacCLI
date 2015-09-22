@@ -11,6 +11,9 @@ Sherlock is a very simple password and personal information manager for Mac, iOS
 + Windows: https://github.com/soheilpro/Sherlock-Win
 
 ## Version History
++ **1.2**
+  + Added support for running scripts
+  + Added Open command
 + **1.1**
   + Added Find command
   + Added --secret/--no-secret options to Update command
