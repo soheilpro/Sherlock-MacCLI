@@ -71,7 +71,7 @@
 
 - (int)runWithArguments:(NSArray*)arguments
 {
-    if (arguments.count != 2)
+    if (arguments.count < 2)
     {
         [Console write:@"Usage: sherlock database\n"];
         
@@ -83,7 +83,13 @@
     self.context.database = [self openDatabaseAtPath:self.context.databasePath];
     self.context.folder = self.context.database.root;
 
-    [self processCommands];
+    if (arguments.count > 2)
+        [self runScript:[arguments objectAtIndex:2]];
+
+    if (self.shouldExit)
+        return 0;
+
+    [self runInteractive];
 
     return 0;
 }
@@ -110,7 +116,7 @@
     }
 }
 
-- (void)processCommands
+- (void)runInteractive
 {
     while (YES)
     {
@@ -142,29 +148,47 @@
             }
         }];
 
-        PKTokenizer* tokenizer = [PKTokenizer tokenizerWithString:input];
-
-        for (Class commandClass in self.commandClasses)
-            [commandClass initTokenizer:tokenizer];
-
-        NSString* commandName = [tokenizer nextToken].stringValue;
-        Command* command = [self commandByName:commandName];
-
-        if (command == nil)
-        {
-            [self reportError:@"Invalid command"];
-            continue;
-        }
-
-        command.context = self.context;
-        command.controller = self;
-        command.tokenizer = tokenizer;
-
-        [command execute];
+        [self processStatement:input];
 
         if (self.shouldExit)
             break;
     }
+}
+
+- (void)runScript:(NSString*)script
+{
+    NSArray* statements = [script componentsSeparatedByString:@";"];
+
+    for (NSString* statement in statements)
+    {
+        [self processStatement:statement];
+
+        if (self.shouldExit)
+            break;
+    }
+}
+
+- (void)processStatement:(NSString*)input
+{
+    PKTokenizer* tokenizer = [PKTokenizer tokenizerWithString:input];
+
+    for (Class commandClass in self.commandClasses)
+        [commandClass initTokenizer:tokenizer];
+
+    NSString* commandName = [tokenizer nextToken].stringValue;
+    Command* command = [self commandByName:commandName];
+
+    if (command == nil)
+    {
+        [self reportError:@"Invalid command"];
+        return;
+    }
+
+    command.context = self.context;
+    command.controller = self;
+    command.tokenizer = tokenizer;
+
+    [command execute];
 }
 
 - (Command*)commandByName:(NSString*)name

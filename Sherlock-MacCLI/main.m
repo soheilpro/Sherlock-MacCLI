@@ -18,9 +18,8 @@ int main(int argc, const char* argv[])
         for (int i = 0; i < argc; i++)
             [arguments addObject:[NSString stringWithUTF8String:argv[i]]];
 
-        Controller* sherlock = [[Controller alloc] init];
-        [sherlock runWithArguments:arguments];
-    }
+        Controller* controller = [[Controller alloc] init];
 
-    return 0;
+        return [controller runWithArguments:arguments];
+    }
 }
